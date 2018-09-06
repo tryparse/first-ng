@@ -25,7 +25,7 @@ export class LanguagesComponent implements OnInit {
   }
 
   hasItems(): boolean {
-    return this.languages.length !== 0;
+    return this.languages != null && this.languages.length !== 0;
   }
 
 }

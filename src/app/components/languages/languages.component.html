@@ -15,9 +15,9 @@
     </thead>
     <tbody>
       <tr *ngFor="let l of languages">
-        <td>{{l.Id}}</td>
-        <td><span class="badge badge-secondary">{{l.Title}}</span></td>
-        <td>{{l.CreatedWhen | date:'yyyy'}}</td>
+        <td>{{ l.Id }}</td>
+        <td><span class="badge badge-secondary">{{ l.Title }}</span></td>
+        <td>{{ l.CreatedWhen | date:'yyyy' }}</td>
       </tr>
     </tbody>
   </table>

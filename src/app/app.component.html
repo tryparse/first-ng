@@ -1,8 +1,17 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
+<div container>
+  <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+    <a class="navbar-brand" href="">Angular</a>
+    <div class="collapse navbar-collapse">
+      <div class="navbar-nav">
+          <a class="nav-item nav-link" routerLink="/languages">Languages</a>
+          <a class="nav-item nav-link" routerLink="/cats">Cats</a>  
+      </div>
+    </div>
+  </nav>
 </div>
-<app-languages></app-languages>
-
+<div class="container-fluid text-center">
+  <div class="alert alert-success" role="alert">
+    Welcome to {{ title }}!
+  </div>
+  <router-outlet></router-outlet>
+</div>
