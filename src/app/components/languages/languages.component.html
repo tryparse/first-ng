@@ -1,0 +1,24 @@
+<div class="container text-centered">
+  <div class="btn-group" role="group" aria-label="Buttons">
+    <button type="button" class="btn btn-dark"
+      (click)="this.getLanguages()">Get list of programming languages</button>
+    <button type="button" class="btn btn-danger"
+      (click)="this.clear()">Clear</button>
+  </div>
+  <table class="table">
+    <thead>
+      <tr *ngIf="this.hasItems()">
+        <td>Id</td>
+        <td>Title</td>
+        <td>CreatedWhen</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let l of languages">
+        <td>{{l.Id}}</td>
+        <td><span class="badge badge-secondary">{{l.Title}}</span></td>
+        <td>{{l.CreatedWhen | date:'yyyy'}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
