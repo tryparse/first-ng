@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class LanguageService {
 
-  private url = 'http://localhost/first-ng-api/api/language/';
+  private url = 'http://localhost:51611/api/language/';
 
   constructor(private http: HttpClient) { }
 
